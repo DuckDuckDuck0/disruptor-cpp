@@ -1,0 +1,5 @@
+add_executable(one_producer_to_three_pipeline_consumers one_producer_to_three_pipeline_consumers.cpp)
+target_link_libraries(one_producer_to_three_pipeline_consumers PRIVATE disruptor pthread)
+
+add_executable(test_mpmc_mode test_mpmc_mode.cpp)
+target_link_libraries(test_mpmc_mode PRIVATE disruptor pthread)
